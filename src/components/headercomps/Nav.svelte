@@ -1,15 +1,14 @@
 <script>
-  const navItems = ['Pages', 'Resources', 'Blog'];
+  const navItems = ['Projects', 'About'];
 </script>
 
-<nav
-  class="items-center w-full md:w-auto hidden md:flex text-gray-600 dark:text-slate-200"
-  aria-label="Main navigation"
-  id="menu"
->
-  <ul>
-    <li>Hey</li>
-    <li>hey</li>
-    <li>hey</li>
+<nav class="mx-auto mt-6 p-2 max-w-fit bg-white">
+  <ul class="flex">
+    {#each navItems as item}
+      <li class="mx-5">{item}</li>
+    {/each}
   </ul>
 </nav>
+
+<style>
+</style>
